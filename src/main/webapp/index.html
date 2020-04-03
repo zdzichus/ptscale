@@ -18,7 +18,7 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 	crossorigin="anonymous"></script>
 
-<title>Users</title>
+<title>GetUsers</title>
 </head>
 <body>
 	<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -43,76 +43,59 @@
 		</div>
 	</div><br><br><br>
     
-    <div class="container">
-    	   <div class="jumbotron">
-    	    <button type="button" class="btn btn-primary btn-sm">+ Create New</button><br><br>		
-             <h5>User List </h5>
-             <table class="table table-hover">
-				  <thead>
-				    <tr>
-				      <th scope="col">User Name</th>
-				      <th scope="col">First Name</th>
-				      <th scope="col">Second Name</th>
-				      <th scope="col">Job Title</th>
-				      <th scope="col">Contact Phone</th>
-				      <th scope="col">Email</th>     
-				    </tr>
-				  </thead>
-				  <tbody>
-				    <tr class="table-info">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-primary">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-info">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-primary">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-info">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-primary">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				   
-				  </tbody>
-				</table> 
-
-  		</div>
-	</div>
+ <div class="jumbotron">
+<div class="card border-primary mb-3" style="max-width: 30rem;">
+  <div class="card-header">New User</div>
+  <div class="card-body">
+    <h4 class="card-title">Entry details:</h4>
+    	<form method ="get" action="addressBookServlet">
+				  
+			  <div class="form-group">
+				    <label class="form-control-label" for="inputSuccess1">User Name</label>
+                    <input type="text" name="userName" class="form-control"> <br>
+				
+				     <label class="form-control-label" for="inputSuccess1">First Name</label>
+                     <input type="text" name="firstName" class="form-control" > <br>
+                    
+                      <label class="form-control-label" for="inputSuccess1">Second Name</label>
+                     <input type="text" name="secondName" class="form-control" > <br>
+                     
+                       <label class="form-control-label" for="inputSuccess1">Job Title</label>
+                     <input type="text" name="jobTitle" class="form-control" > <br>
+                     
+                       <label class="form-control-label" for="inputSuccess1">Contact Phone</label>
+                     <input type="text" name="contactPhone" class="form-control" > <br>
+                      
+                        <label class="form-control-label" for="inputSuccess1">Email</label>
+                     <input type="text" name="email" class="form-control" > <br>
+                            
+                     
+                 </div>
+  						
+  						<div class="form-group">
+   						
+   						 <div class="custom-control custom-radio">
+      					 <input type="radio" id="admin" name="appRole" value="Male" class="custom-control-input">
+     					 <label class="custom-control-label" for="male">admin</label>
+    					 </div>
+    					
+   						 <div class="custom-control custom-radio">
+     					 <input type="radio" id="user" name="appRole" value="Female" class="custom-control-input">
+     					 <label class="custom-control-label" for="female">user</label>
+   						 </div>
+   						
+   						 </div>	
+  				
+				
+				     <div>
+				    <button type="submit" class="btn btn-primary">Submit</button>
+					<!-- <input type="submit" value="Submit">  -->
+						
+				</div>
+		</form>
+		</div>	
+  </div>	
+</div>
 	
 </body>
 </html>
