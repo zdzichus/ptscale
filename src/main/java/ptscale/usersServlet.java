@@ -38,7 +38,7 @@ public class usersServlet extends HttpServlet {
 		users.setAppRole(appRole);
 		
 				if (userName.isEmpty() || secondName.isEmpty() || firstName.isEmpty() || jobTitle.isEmpty() || contactPhone.isEmpty() || email.isEmpty() ||
-						appRole =="null" ) {
+						appRole == null ) {
 							
 							RequestDispatcher req = request.getRequestDispatcher("index.html");
 							req.include(request, response);
