@@ -50,8 +50,6 @@
 	</div><br><br><br>
 	
 	
-  <%   out.println(request.getParameter("firstName"));
-   %>
  <div class= "container">
 <div class="card border-primary mb-12" >
   <div class="card-header"><button type="button" class="btn btn-primary btn-sm">+ Create New</button><br> </div>	
