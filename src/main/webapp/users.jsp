@@ -41,8 +41,10 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	<div> Sriplet <% out.println("pobrane nazwisko: " + request.getParameter("secondName")); %></div>
-	
+	<div> Sriplet <% out.println("wynik: " + request.getParameter("secondName")); %>
+	               <% out.println(" wszystki wyniki :" + input.readUsers()); %> 
+	</div>
+	                 
  <div class= "container">
 <div class="card border-primary mb-12" >
   <div class="card-header"><button type="button" class="btn btn-primary btn-sm">+ Create New</button><br> </div>	
