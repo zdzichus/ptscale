@@ -1,10 +1,3 @@
-    <%@ page language="java" contentType="text/html; charset=windows-1256" pageEncoding="windows-1256" 
-     import="com.mongodb.BasicDBObject"
-     import="com.mongodb.DB"
-     import="com.mongodb.DBCollection"
-     import="com.mongodb.DBCursor"
-     import="com.mongodb.MongoClient"
-     import="java.net.UnknownHostException"  %> 
 <!DOCTYPE html>
 <html>
 <head>
