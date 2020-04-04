@@ -41,11 +41,6 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	
-	<% String name = (String)request.getAttribute("mywyniki");
-      out.println(name);
-    %>
-	
 	                 
  <div class= "container">
 <div class="card border-primary mb-12" >
@@ -186,7 +181,9 @@
 		</div>	
   </div>	
  </div> <br> 
- 
+ <% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
+      out.println(AllUsersDetails);
+    %>
 	
 </div>  
   

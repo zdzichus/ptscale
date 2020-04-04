@@ -30,7 +30,7 @@ public class usersServlet extends HttpServlet {
 		String contactPhone = request.getParameter("contactPhone");
 		String email = request.getParameter("email");
 		String appRole = request.getParameter("appRole");
-		String wyniki = input.readUsers();
+		String usersAll = input.readUsers();
 		
 			
 		users.setUserName(userName);
@@ -52,12 +52,10 @@ public class usersServlet extends HttpServlet {
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
 							
-							
-							request.setAttribute("mywyniki",wyniki);
+							//forwarding the 
+							request.setAttribute("usersAllForward",usersAll);
 							request.getRequestDispatcher("users.jsp").forward(request, response); 
 						
-							
-							System.out.println(" wyniki :" + wyniki);     
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
 							
