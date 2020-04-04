@@ -41,7 +41,7 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	<div> Sriplet <% out.println("wynik: " + request.getParameter(input.readUsers())); %>
+	<div> Sriplet <% out.println("wynik: " + request.getParameter("jobTitle")); %>
 	               
 	</div>
 	                 

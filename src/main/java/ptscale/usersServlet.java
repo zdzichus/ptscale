@@ -49,11 +49,11 @@ public class usersServlet extends HttpServlet {
 							
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));
-						   // System.out.println(" wyniki :" + input.readUsers());     
+						   /System.out.println(" wyniki :" + input.readUsers());     
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
-							String wyniki = input.readUsers();
-							System.out.println(wyniki);
+							//String wyniki = input.readUsers();
+							//System.out.println(wyniki);
 							
 						
 		}
