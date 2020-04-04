@@ -1,4 +1,10 @@
-
+    <%@ page language="java" contentType="text/html; charset=windows-1256" pageEncoding="windows-1256" 
+     import="com.mongodb.BasicDBObject"
+     import="com.mongodb.DB"
+     import="com.mongodb.DBCollection"
+     import="com.mongodb.DBCursor"
+     import="com.mongodb.MongoClient"
+     import="java.net.UnknownHostException"  %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +49,13 @@
 		</div>
 	</div><br><br><br>
 	
-
+	
+  <%
+        users users = new users();
+	    usersMongo input = new usersMongo(); 
+        out.println(request.getParameter("firstName"));
+        out.println("<h2> There are now: " + input.readUsers()+"</h1> <br>");
+    %>
  <div class= "container">
 <div class="card border-primary mb-12" >
   <div class="card-header"><button type="button" class="btn btn-primary btn-sm">+ Create New</button><br> </div>	

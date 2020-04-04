@@ -51,10 +51,10 @@ public class usersServlet extends HttpServlet {
 						   // System.out.println(" wyniki :" + input.readUsers());     
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
-			
+							
 		}
 		
-		
+				
 		
 	}
 
