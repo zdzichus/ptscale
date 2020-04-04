@@ -51,10 +51,11 @@
 	
 	
   <%
-        users users = new users();
+
+       users users = new users();
 	    usersMongo input = new usersMongo(); 
         out.println(request.getParameter("firstName"));
-        out.println("<h2> There are now: " + input.readUsers()+"</h1> <br>");
+        out.println(input.readUsers);
     %>
  <div class= "container">
 <div class="card border-primary mb-12" >
