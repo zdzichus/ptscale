@@ -1,5 +1,5 @@
-
-<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -43,10 +43,12 @@
 		</div>
 	</div><br><br><br>
 	
-	 <%
-        out.println(request.getParameter("jobTitle"));
-        usersMongo input = new usersMongo();     
-    %>
+	   <%
+        usersMongo input = new usersMongo();
+        out.println(request.getParameter("firstName"));
+       %>
+	
+	
  <div class= "container">
 <div class="card border-primary mb-12" >
   <div class="card-header"><button type="button" class="btn btn-primary btn-sm">+ Create New</button><br> </div>	
