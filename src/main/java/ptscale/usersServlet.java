@@ -12,9 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.mongodb.BasicDBObject;
 
 public class usersServlet extends HttpServlet {
-	 users users = new users();
+	 
 	private static final long serialVersionUID = 1L;
-	
+	users users = new users();
+	usersMongo input = new usersMongo();
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -44,7 +45,7 @@ public class usersServlet extends HttpServlet {
 							req.include(request, response);
 				
 				} else {
-							usersMongo input = new usersMongo();
+							
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));
 						   // System.out.println(" wyniki :" + input.readUsers());     
