@@ -16,6 +16,7 @@ public class usersServlet extends HttpServlet {
 	public static final long serialVersionUID = 1L;
 	users users = new users();
 	usersMongo input = new usersMongo();
+	
    
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -30,7 +31,7 @@ public class usersServlet extends HttpServlet {
 		String contactPhone = request.getParameter("contactPhone");
 		String email = request.getParameter("email");
 		String appRole = request.getParameter("appRole");
-		String usersAll = input.readUsers();
+		
 		
 			
 		users.setUserName(userName);
@@ -53,13 +54,12 @@ public class usersServlet extends HttpServlet {
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
 							
 							//forwarding the 
-						
-						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
-							req.include(request, response);
+							String usersAll = input.readUsers();
+							request.setAttribute("usersAllForward", usersAll);
+						   	request.getRequestDispatcher("users.jsp").forward(request, response); 	
 							
-							request.setAttribute("usersAllForward",usersAll);
-							request.getRequestDispatcher("users.jsp").forward(request, response); 
-						
+						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
+							req.include(request, response);					
 						
 	 	}
 				
