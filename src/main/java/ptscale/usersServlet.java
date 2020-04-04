@@ -53,13 +53,13 @@ public class usersServlet extends HttpServlet {
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
 							
 							//forwarding the 
-							request.setAttribute("usersAllForward",usersAll);
-							request.getRequestDispatcher("users.jsp").forward(request, response); 
 						
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
 							
-							
+							request.setAttribute("usersAllForward",usersAll);
+							request.getRequestDispatcher("users.jsp").forward(request, response); 
+						
 						
 	 	}
 				
