@@ -22,6 +22,7 @@ public class usersServlet extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		
+		
 		String userName = request.getParameter("userName");
 		String firstName = request.getParameter("firstName");
 		String secondName = request.getParameter("secondName");
@@ -53,8 +54,8 @@ public class usersServlet extends HttpServlet {
 							req.include(request, response);
 							
 		}
-		
-				
+			
+				 
 		
 	}
 

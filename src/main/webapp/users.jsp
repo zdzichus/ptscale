@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,12 +41,7 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	
-	   <%
-        usersMongo input = new usersMongo();
-        out.println(request.getParameter("firstName"));
-       %>
-	
+	<div> Sriplet <% out.println("pobrane nazwisko: " + request.getParameter("secondName")); %></div>
 	
  <div class= "container">
 <div class="card border-primary mb-12" >
