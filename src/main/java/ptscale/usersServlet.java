@@ -47,7 +47,7 @@ public class usersServlet extends HttpServlet {
 							usersMongo input = new usersMongo();
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));
-						    System.out.println(" wyniki :" + input.readUsers());     
+						   // System.out.println(" wyniki :" + input.readUsers());     
 						    RequestDispatcher req = request.getRequestDispatcher("users.html");
 							req.include(request, response);
 			
