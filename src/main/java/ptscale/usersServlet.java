@@ -13,6 +13,7 @@ import com.mongodb.BasicDBObject;
 
 public class usersServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	users users = new users();
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -26,9 +27,7 @@ public class usersServlet extends HttpServlet {
 		String contactPhone = request.getParameter("contactPhone");
 		String email = request.getParameter("email");
 		String appRole = request.getParameter("appRole");
-		
-		users users = new users();
-		
+			
 		users.setUserName(userName);
 		users.setSecondName(secondName);
 		users.setFirstName(firstName);

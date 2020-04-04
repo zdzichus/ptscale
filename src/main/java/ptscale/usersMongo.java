@@ -37,10 +37,10 @@ public class usersMongo {
 
 		}
 	}
-	 long id = ptCollection.getCount();
+	
 	public void addUsers(String userName, String firstName, String secondName ,String jobTitle, String contactPhone, String email, String appRole ) {
 		 
-		
+		 long id = ptCollection.getCount();
 		 ptCollection.insert(new BasicDBObject().append("Id",id).append("UserName", userName).append("FirstName", firstName).append("SecondName", secondName) 
 				             .append("JobTitle",jobTitle).append("ContactPhone", contactPhone).append("Email", email).append("AppRole", appRole) );
       
