@@ -52,8 +52,6 @@
 	
   <%
 
-       users users = new users();
-	    usersMongo input = new usersMongo(); 
         out.println(request.getParameter("firstName"));
         out.println(input.readUsers);
     %>
