@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.mongodb.BasicDBObject;
 
 public class usersServlet extends HttpServlet {
+	 users users = new users();
 	private static final long serialVersionUID = 1L;
-	users users = new users();
+	
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
