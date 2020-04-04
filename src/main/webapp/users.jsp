@@ -95,7 +95,8 @@
  </div> <br> 
  <% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
     out.println(AllUsersDetails);
-    %>
+     
+  %>
 	
 </div>  
   
