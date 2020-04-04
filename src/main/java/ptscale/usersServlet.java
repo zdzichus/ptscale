@@ -13,11 +13,11 @@ import com.mongodb.BasicDBObject;
 
 public class usersServlet extends HttpServlet {
 	 
-	private static final long serialVersionUID = 1L;
+	public static final long serialVersionUID = 1L;
 	users users = new users();
 	usersMongo input = new usersMongo();
    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
@@ -31,6 +31,7 @@ public class usersServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String appRole = request.getParameter("appRole");
 		String wyniki = input.readUsers();
+		
 			
 		users.setUserName(userName);
 		users.setSecondName(secondName);
@@ -49,22 +50,33 @@ public class usersServlet extends HttpServlet {
 				} else {
 							
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
-							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));
-						    request.getParameter(wyniki);
+							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
+							
 							System.out.println(" wyniki :" + wyniki);     
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
-							//String wyniki = input.readUsers();
-							//System.out.println(wyniki);
 							
 						
-		}
-			
-				 
+						
+	 	}
+				
+				
+				
 		
-	}
+	 }
 
-	
+	public class SimpleBean {
+		  private String message = input.readUsers();
+
+		  public String getMessage() {
+		    return(message);
+		  }
+
+		  public void setMessage(String message) {
+		    this.message = message;
+		  }
+		}	
+
 	
 
 }

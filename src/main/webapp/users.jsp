@@ -41,8 +41,14 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	<div> Sriplet <% out.println("wynik: " + request.getParameter("email")); %>
-	               
+	<div> <jsp:useBean id="test" class="ptscale.SimpleBean" />
+			<jsp:setProperty name="test" 
+                 property="message" 
+                 value=message />
+             
+<h1>Message: <I>
+<jsp:getProperty name="test" property="message" />
+</I></h1>       
 	</div>
 	                 
  <div class= "container">
