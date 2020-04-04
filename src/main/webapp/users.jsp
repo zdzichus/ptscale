@@ -41,15 +41,11 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	<div> <jsp:useBean id="test" class="ptscale.SimpleBean" />
-			<jsp:setProperty name="test" 
-                 property="message" 
-                 value=message />
-             
-<h1>Message: <I>
-<jsp:getProperty name="test" property="message" />
-</I></h1>       
-	</div>
+	
+	<% String name = (String)request.getAttribute("mywyniki");
+      out.println(name);
+    %>
+	
 	                 
  <div class= "container">
 <div class="card border-primary mb-12" >

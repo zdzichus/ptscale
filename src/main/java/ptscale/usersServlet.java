@@ -52,31 +52,20 @@ public class usersServlet extends HttpServlet {
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
 							
+							
+							request.setAttribute("mywyniki",wyniki);
+							request.getRequestDispatcher("users.jsp").forward(request, response); 
+						
+							
 							System.out.println(" wyniki :" + wyniki);     
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);
 							
-						
+							
 						
 	 	}
 				
-				
-				
-		
-	 }
-
-	public class SimpleBean {
-		  private String message = input.readUsers();
-
-		  public String getMessage() {
-		    return(message);
-		  }
-
-		  public void setMessage(String message) {
-		    this.message = message;
-		  }
-		}	
-
 	
+	 }
 
 }
