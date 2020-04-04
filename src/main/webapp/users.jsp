@@ -87,94 +87,6 @@
 				       <td>Column content</td>
 				      <td>Column content</td>
 				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
 				  </tbody>
 				</table> 
 	
@@ -182,7 +94,7 @@
   </div>	
  </div> <br> 
  <% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
-      out.println(AllUsersDetails);
+    out.println(AllUsersDetails);
     %>
 	
 </div>  
