@@ -41,8 +41,8 @@
 			</div>
 		</div>
 	</div><br><br><br>
-	<div> Sriplet <% out.println("wynik: " + request.getParameter("secondName")); %>
-	               <% out.println(" wszystki wyniki :" + input.readUsers()); %> 
+	<div> Sriplet <% out.println("wynik: " + request.getParameter(input.readUsers())); %>
+	               
 	</div>
 	                 
  <div class= "container">
