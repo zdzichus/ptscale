@@ -62,11 +62,13 @@
 				    </tr>
 				  </thead>
 				  <tbody>
-		   <%  String AllUsersDetails = (String)request.getAttribute("usersAllForward");
-           		out.println(AllUsersDetails);
+		   <%  
 				
-               String sizestring = (String)request.getAttribute("sizestring");
- 		   		out.println(sizestring);
+                String AllUsersDetails = (String)request.getAttribute("usersAllForward");
+           		out.println(AllUsersDetails);
+                
+                String usersstring = (String)request.getAttribute("usersstring");
+ 		   		out.println(usersstring);
               				
              %>			
 				  </tbody>
