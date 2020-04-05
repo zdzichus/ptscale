@@ -96,24 +96,7 @@
 												}
 											}
 								else{
-                                  	String wordTable = "\"\"";
-									String tempTable[] = AllUsersDetails.split("\"");
-									int countTable = 0;
-			    						for (int i = 0; i < tempTable.length; i++) {
-				    						if (wordTable.equals(tempTable[i]))
-											countTable++;		
-											}
-				   					 		int z= 0; 
-												for (int j=0; j< inputs; j++) {
-													out.println(  "<tr class=table-light>" + 
-													"      <th scope=row >"+tempTable[z+11]+"</td>" + 
-													"      <td>"+tempTable[z+15]+"</td>" + 
-													"      <td>"+tempTable[z+19]+"</td>" + 
-													"      <td>"+tempTable[z+23]+"</td>" + 
-													"      <td>"+tempTable[z+27]+"</td>" + 
-													"      <td>"+tempTable[z+31]+"</td>" + 
-													"    </tr>"); 			          
-													z=z+36;							
+                                  				
 
 								}	
 									
