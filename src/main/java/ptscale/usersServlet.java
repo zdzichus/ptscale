@@ -56,14 +56,17 @@ public class usersServlet extends HttpServlet {
 							
 							//forwarding the All coolection's users to users.jsp 
 							String usersAll = input.readUsers();
+							int sizeint = input.size();
+							String sizestring = String.valueOf(sizeint); 
+							
 							request.setAttribute("usersAllForward", usersAll);
-						   	request.getRequestDispatcher("users.jsp").forward(request, response); 
-						   	
-						   	int sizeint = input.size();
-						   	String sizestring = String.valueOf(sizeint); 
-						   	request.setAttribute("usersstring", sizestring);
-						   	request.getRequestDispatcher("users.jsp").forward(request, response); 
-						   	
+						 	request.setAttribute("usersstring", sizestring);
+							
+							request.getRequestDispatcher("users.jsp").forward(request, response); 			   	
+						   
+						   	System.out.println("Orginalny int" + sizeint);
+						   	System.out.println("Po transformacji na STring" +sizestring);						 	
+						  					
 						   	
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);		

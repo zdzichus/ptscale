@@ -65,29 +65,10 @@
 		   <%  String AllUsersDetails = (String)request.getAttribute("usersAllForward");
            		out.println(AllUsersDetails);
 				
-                String sizestring = (String)request.getAttribute("sizestring");
- 		   		int inputs = Integer.parseInt(sizestring);
-				
-                String stringTable = (String)request.getAttribute("usersAllForward");
-				String wordTable = "\"\"";
-				String tempTable[] = AllUsersDetails.split("\"");
-				int countTable = 0;
-			    for (int i = 0; i < tempTable.length; i++) {
-				    if (wordTable.equals(tempTable[i]))
-						countTable++;		
-					}
-				    int z= 0; 
-					for (int j=0; j< inputs; j++) {
-								out.println(  "<tr class=table-light>" + 
-										"      <th scope=row >"+tempTable[z+5]+"</td>" + 
-										"      <td>"+tempTable[z+9]+"</td>" + 
-										"      <td>"+tempTable[z+11]+"</td>" + 
-										"      <td>"+tempTable[z+13]+"</td>" + 
-										"      <td>"+tempTable[z+15]+"</td>" + 
-										"      <td>"+tempTable[z+17]+"</td>" + 
-										"    </tr>"); 			          
-											z=z+20;
-											} %>			
+               String sizestring = (String)request.getAttribute("sizestring");
+ 		   		out.println(sizestring);
+              				
+             %>			
 				  </tbody>
 				</table> 
 	
