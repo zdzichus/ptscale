@@ -36,8 +36,7 @@
 					<li class="nav-item"><a class="nav-link" href="#">TimeSheets</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
 				</ul>
-				    
-					
+				    					
 			</div>
 		</div>
 	</div><br><br><br>
@@ -63,40 +62,44 @@
 				    </tr>
 				  </thead>
 				  <tbody>
-				    <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				    <tr class="table-default">
-				      <th scope="row">Primary</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
-				     <tr class="table-light">
-				      <th scope="row">Default</th>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				      <td>Column content</td>
-				       <td>Column content</td>
-				      <td>Column content</td>
-				    </tr>
+		   <%  String AllUsersDetails = (String)request.getAttribute("usersAllForward");
+           		out.println(AllUsersDetails);
+				 		   		
+				int inputs = ((Integer)request.getAttribute("input.size()"));	
+
+				String stringTable = (String)request.getAttribute("usersAllForward");
+				String wordTable = "\"\"";
+				String tempTable[] = AllUsersDetails.split("\"");
+				int countTable = 0;
+			    for (int i = 0; i < tempTable.length; i++) {
+				    if (wordTable.equals(tempTable[i]))
+						countTable++;		
+					}
+				    int z= 0; 
+					for (int j=0; j< inputs; j++) {
+								out.println(  "<tr class=table-light>" + 
+										"      <th scope=row >"+tempTable[z+5]+"</td>" + 
+										"      <td>"+tempTable[z+9]+"</td>" + 
+										"      <td>"+tempTable[z+11]+"</td>" + 
+										"      <td>"+tempTable[z+13]+"</td>" + 
+										"      <td>"+tempTable[z+15]+"</td>" + 
+										"      <td>"+tempTable[z+17]+"</td>" + 
+										"    </tr>"); 			          
+											z=z+20;
+											} %>			
 				  </tbody>
 				</table> 
 	
 		</div>	
-  </div>	
+   </div>	
  </div> <br> 
- <% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
-    out.println(AllUsersDetails);
+ 
+    
+      
+				
+
      
-  %>
+
 	
 </div>  
   

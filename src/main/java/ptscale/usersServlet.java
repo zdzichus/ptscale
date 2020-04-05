@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 
 public class usersServlet extends HttpServlet {
 	 
@@ -21,7 +22,7 @@ public class usersServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html; charset=UTF-8");
-		PrintWriter out = response.getWriter();
+		response.getWriter();
 		
 		
 		String userName = request.getParameter("userName");
@@ -53,13 +54,20 @@ public class usersServlet extends HttpServlet {
 							input.addUsers(request.getParameter("userName"),request.getParameter("firstName"),request.getParameter("secondName"),
 							request.getParameter("jobTitle"),request.getParameter("contactPhone"),request.getParameter("email"),request.getParameter("appRole"));				
 							
-							//forwarding the 
+							//forwarding the All coolection's users to users.jsp 
 							String usersAll = input.readUsers();
 							request.setAttribute("usersAllForward", usersAll);
-						   	request.getRequestDispatcher("users.jsp").forward(request, response); 	
+						   	request.getRequestDispatcher("users.jsp").forward(request, response); 
+						   	
+						    request.getAttribute("input.size()");
+						   	request.getRequestDispatcher("users.jsp").forward(request, response); 
 							
+						   	
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
-							req.include(request, response);					
+							req.include(request, response);		
+
+							
+
 						
 	 	}
 				

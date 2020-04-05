@@ -44,8 +44,12 @@ public class usersMongo {
 		 ptCollection.insert(new BasicDBObject().append("Id",id).append("UserName", userName).append("FirstName", firstName).append("SecondName", secondName) 
 				             .append("JobTitle",jobTitle).append("ContactPhone", contactPhone).append("Email", email).append("AppRole", appRole) );
       
-	
 	}
+	
+	public int size() {
+		return (int) ptCollection.getCount();
+	}
+	
 	public String readUsers() {
 
 		StringBuilder items = new StringBuilder();
