@@ -32,7 +32,7 @@
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="../">Dashboard</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../users.jsp">Users<span	class="sr-only">(current)</span></a></li>
+					<li class="nav-item active"><a class="nav-link" href="../user.jsp">Users<span	class="sr-only">(current)</span></a></li>
 					<li class="nav-item"><a class="nav-link" href="#">TimeSheets</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
 				</ul>

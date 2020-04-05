@@ -47,7 +47,7 @@ public class usersServlet extends HttpServlet {
 				if (userName.isEmpty() || secondName.isEmpty() || firstName.isEmpty() || jobTitle.isEmpty() || contactPhone.isEmpty() || email.isEmpty() ||
 						appRole == null ) {
 							
-							RequestDispatcher req = request.getRequestDispatcher("index.html");
+							RequestDispatcher req = request.getRequestDispatcher("newUser.jsp");
 							req.include(request, response);
 				
 				} else {
@@ -62,9 +62,9 @@ public class usersServlet extends HttpServlet {
 						    System.out.println(usersAll);
 							request.setAttribute("usersAllForward", usersAll);
 							request.setAttribute("usersstring", sizestring);
-						 	request.getRequestDispatcher("users.jsp").forward(request, response);
+						 	request.getRequestDispatcher("user.jsp").forward(request, response);
 						 			   		 		
-						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
+						    RequestDispatcher req = request.getRequestDispatcher("user.jsp");
 							req.include(request, response);		
 
 							
