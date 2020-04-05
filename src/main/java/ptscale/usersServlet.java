@@ -1,6 +1,7 @@
 package ptscale;
 
 import java.io.IOException;
+
 import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
@@ -22,7 +23,7 @@ public class usersServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html; charset=UTF-8");
-		response.getWriter();
+		PrintWriter out = response.getWriter();
 		
 		
 		String userName = request.getParameter("userName");
@@ -58,16 +59,11 @@ public class usersServlet extends HttpServlet {
 							String usersAll = input.readUsers();
 							int sizeint = input.size();
 							String sizestring = String.valueOf(sizeint); 
-							
+						    out.println(usersAll);
 							request.setAttribute("usersAllForward", usersAll);
 							request.setAttribute("usersstring", sizestring);
 						 	request.getRequestDispatcher("users.jsp").forward(request, response);
-							 			   	
-						   
-						   	System.out.println("Orginalny int" + sizeint);
-						   	System.out.println("Po transformacji na STring" +sizestring);						 	
-						  					
-						   	
+						 			   		 		
 						    RequestDispatcher req = request.getRequestDispatcher("users.jsp");
 							req.include(request, response);		
 
