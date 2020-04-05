@@ -64,10 +64,11 @@
 				  <tbody>
 		   <%  String AllUsersDetails = (String)request.getAttribute("usersAllForward");
            		out.println(AllUsersDetails);
-				 		   		
-				int inputs = ((Integer)request.getAttribute("input.size()"));	
-
-				String stringTable = (String)request.getAttribute("usersAllForward");
+				
+                String sizestring = (String)request.getAttribute("sizestring");
+ 		   		int inputs = Integer.parseInt(sizestring);
+				
+                String stringTable = (String)request.getAttribute("usersAllForward");
 				String wordTable = "\"\"";
 				String tempTable[] = AllUsersDetails.split("\"");
 				int countTable = 0;
@@ -93,16 +94,8 @@
 		</div>	
    </div>	
  </div> <br> 
- 
-    
-      
-				
-
-     
-
 	
 </div>  
   
-	
 </body>
 </html>
