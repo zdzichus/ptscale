@@ -60,8 +60,7 @@ public class usersServlet extends HttpServlet {
 							String sizestring = String.valueOf(sizeint); 
 							
 							request.setAttribute("usersAllForward", usersAll);
-							request.getRequestDispatcher("users.jsp").forward(request, response);
-						 	request.setAttribute("usersstring", sizestring);
+							request.setAttribute("usersstring", sizestring);
 						 	request.getRequestDispatcher("users.jsp").forward(request, response);
 							 			   	
 						   
