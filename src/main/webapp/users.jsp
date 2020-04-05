@@ -83,12 +83,12 @@
 				    int z= 0; 
 					for (int j=0; j< inputs; j++) {
 								out.println(  "<tr class=table-light>" + 
-										"      <th scope=row >"+tempTable[z+9]+"</td>" + 
-										"      <td>"+tempTable[z+11]+"</td>" + 
+										"      <th scope=row >"+tempTable[z+11]+"</td>" + 
 										"      <td>"+tempTable[z+13]+"</td>" + 
 										"      <td>"+tempTable[z+15]+"</td>" + 
 										"      <td>"+tempTable[z+17]+"</td>" + 
 										"      <td>"+tempTable[z+19]+"</td>" + 
+										"      <td>"+tempTable[z+21]+"</td>" + 
 										"    </tr>"); 			          
 											z=z+20;
 											}
