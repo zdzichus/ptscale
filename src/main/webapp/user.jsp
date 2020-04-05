@@ -47,7 +47,7 @@
 	<div class="container">
 		<div class="card border-primary mb-12">
 			<div class="card-header">
-			    <a class="btn btn-primary btn-sm" href="../newUser.jsp" role="button">+Create New</a>
+			    <a class="btn btn-primary btn-sm" href="../newUser.jsp" role="button">+ Create New</a>
 			
 				<br>
 			</div>
@@ -66,30 +66,59 @@
 							</tr>
 						</thead>
 						<tbody>
-							<% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
-                					 String usersstring = (String)request.getAttribute("usersstring");
- 		 						     int inputs = Integer.valueOf(usersstring);
-                  					 String stringTable = (String)request.getAttribute("usersAllForward");
+							<%     
+									
+                                    String AllUsersDetails = (String)request.getAttribute("usersAllForward");
+                					String usersstring = (String)request.getAttribute("usersstring");
+ 		 						    int inputs = Integer.valueOf(usersstring);
+                  					String stringTable = (String)request.getAttribute("usersAllForward");
+                                    if (inputs > 0) 
+									{
+
 									String wordTable = "\"\"";
 									String tempTable[] = AllUsersDetails.split("\"");
 									int countTable = 0;
-			    					for (int i = 0; i < tempTable.length; i++) {
-				    				if (wordTable.equals(tempTable[i]))
-									countTable++;		
-									}
-				   					 int z= 0; 
-									for (int j=0; j< inputs; j++) {
-									out.println(  "<tr class=table-light>" + 
-										"      <th scope=row >"+tempTable[z+11]+"</td>" + 
-										"      <td>"+tempTable[z+15]+"</td>" + 
-										"      <td>"+tempTable[z+19]+"</td>" + 
-										"      <td>"+tempTable[z+23]+"</td>" + 
-										"      <td>"+tempTable[z+27]+"</td>" + 
-										"      <td>"+tempTable[z+31]+"</td>" + 
-										"    </tr>"); 			          
-											z=z+36;
+			    						for (int i = 0; i < tempTable.length; i++) {
+				    						if (wordTable.equals(tempTable[i]))
+											countTable++;		
 											}
-            			 	 %>			
+				   					 		int z= 0; 
+												for (int j=0; j< inputs; j++) {
+													out.println(  "<tr class=table-light>" + 
+													"      <th scope=row >"+tempTable[z+11]+"</td>" + 
+													"      <td>"+tempTable[z+15]+"</td>" + 
+													"      <td>"+tempTable[z+19]+"</td>" + 
+													"      <td>"+tempTable[z+23]+"</td>" + 
+													"      <td>"+tempTable[z+27]+"</td>" + 
+													"      <td>"+tempTable[z+31]+"</td>" + 
+													"    </tr>"); 			          
+													z=z+36;
+												}
+											}
+								else{
+                                  	String wordTable = "\"\"";
+									String tempTable[] = AllUsersDetails.split("\"");
+									int countTable = 0;
+			    						for (int i = 0; i < tempTable.length; i++) {
+				    						if (wordTable.equals(tempTable[i]))
+											countTable++;		
+											}
+				   					 		int z= 0; 
+												for (int j=0; j< inputs; j++) {
+													out.println(  "<tr class=table-light>" + 
+													"      <th scope=row >"+tempTable[z+11]+"</td>" + 
+													"      <td>"+tempTable[z+15]+"</td>" + 
+													"      <td>"+tempTable[z+19]+"</td>" + 
+													"      <td>"+tempTable[z+23]+"</td>" + 
+													"      <td>"+tempTable[z+27]+"</td>" + 
+													"      <td>"+tempTable[z+31]+"</td>" + 
+													"    </tr>"); 			          
+													z=z+36;							
+
+								}	
+									
+            			 	 %>		
+            			 	 	
 				 		 </tbody>
 				</table> 
 	

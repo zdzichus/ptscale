@@ -33,7 +33,7 @@ public class usersServlet extends HttpServlet {
 		String contactPhone = request.getParameter("contactPhone");
 		String email = request.getParameter("email");
 		String appRole = request.getParameter("appRole");
-		
+	
 		
 			
 		users.setUserName(userName);
@@ -43,6 +43,7 @@ public class usersServlet extends HttpServlet {
 		users.setContactPhone(contactPhone);
 		users.setEmail(email);
 		users.setAppRole(appRole);
+	
 		
 				if (userName.isEmpty() || secondName.isEmpty() || firstName.isEmpty() || jobTitle.isEmpty() || contactPhone.isEmpty() || email.isEmpty() ||
 						appRole == null ) {
@@ -59,20 +60,15 @@ public class usersServlet extends HttpServlet {
 							String usersAll = input.readUsers();
 							int sizeint = input.size();
 							String sizestring = String.valueOf(sizeint); 
-						    System.out.println(usersAll);
+						  
 							request.setAttribute("usersAllForward", usersAll);
 							request.setAttribute("usersstring", sizestring);
 						 	request.getRequestDispatcher("user.jsp").forward(request, response);
-						 			   		 		
+						   		   		 		
 						    RequestDispatcher req = request.getRequestDispatcher("user.jsp");
 							req.include(request, response);		
 
 							
-
-						
-	 	}
-				
-	
-	 }
-
+				}
+	}	
 }

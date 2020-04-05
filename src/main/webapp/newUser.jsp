@@ -49,7 +49,7 @@
   <div class="card-header">New User</div>
   <div class="card-body">
     <h4 class="card-title">Entry details:</h4>
-    	<form method ="get" action="usersServlet">
+    	<form method ="get" action="usersServlet" id="userreg">
 				  
 			  <div class="form-group">
 				    <label class="form-control-label" for="inputSuccess1">Login Name</label>
@@ -87,13 +87,24 @@
    						
    						 </div>	
   				
-				
-				     <div>
-				    <button type="submit" class="btn btn-primary">Submit</button>
+				        <div>
+				        <button type="submit" class="btn btn-primary" onclick="submitform">Submit</button>
+				        </div>
+				          
 					<!-- <input type="submit" value="Submit">  -->
+					
 						
-				</div>
+				
 		</form>
+		 
+				        <script>
+    					function submitform(){
+        				$('#userreg').find('form').submit();
+        				$('.clearFields').val('');
+    					}
+						</script>
+				     
+		
 		</div>	
   </div>	
   
