@@ -52,7 +52,7 @@
     	<form method ="get" action="usersServlet">
 				  
 			  <div class="form-group">
-				    <label class="form-control-label" for="inputSuccess1">User Name</label>
+				    <label class="form-control-label" for="inputSuccess1">Login Name</label>
                     <input type="text" name="userName" class="form-control"> <br>
 				
 				     <label class="form-control-label" for="inputSuccess1">First Name</label>

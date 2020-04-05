@@ -47,8 +47,8 @@
 	<div class="container">
 		<div class="card border-primary mb-12">
 			<div class="card-header">
-				<button type="button" class="btn btn-primary btn-sm">+
-					Create New</button>
+			    <a class="btn btn-primary btn-sm" href="../newUser.jsp" role="button">+Create New</a>
+			
 				<br>
 			</div>
 			<div class="card-body">
