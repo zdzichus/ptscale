@@ -31,77 +31,73 @@
 
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-					<li class="nav-item active"><a class="nav-link" href="#">Users<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="../">Dashboard</a></li>
+					<li class="nav-item active"><a class="nav-link" href="../users.jsp">Users<span	class="sr-only">(current)</span></a></li>
 					<li class="nav-item"><a class="nav-link" href="#">TimeSheets</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
 				</ul>
-				    					
+
 			</div>
 		</div>
-	</div><br><br><br>
-	                 
- <div class= "container">
-<div class="card border-primary mb-12" >
-  <div class="card-header"><button type="button" class="btn btn-primary btn-sm">+ Create New</button><br> </div>	
-  
-   <div class="card-body">
-    <h4 class="card-title">User List </h4>
-    	
-				  
-			  <div class="form-group">
-				         <table class="table table-responsive-sm"  >
-				  <thead>
-				    <tr>
-				      <th scope="col">User Name</th>
-				      <th scope="col">First Name</th>
-				      <th scope="col">Second Name</th>
-				      <th scope="col">Job Title</th>
-				      <th scope="col">Contact Phone</th>
-				      <th scope="col">Email</th>     
-				    </tr>
-				  </thead>
-				  <tbody>
-		   <%  
-				
-                String AllUsersDetails = (String)request.getAttribute("usersAllForward");
-           		
-                
-                String usersstring = (String)request.getAttribute("usersstring");
- 		   	
-                
-                 int inputs = Integer.valueOf(usersstring);
- 
-                  String stringTable = (String)request.getAttribute("usersAllForward");
-				String wordTable = "\"\"";
-				String tempTable[] = AllUsersDetails.split("\"");
-				int countTable = 0;
-			    for (int i = 0; i < tempTable.length; i++) {
-				    if (wordTable.equals(tempTable[i]))
-						countTable++;		
-					}
-				    int z= 0; 
-					for (int j=0; j< inputs; j++) {
-								out.println(  "<tr class=table-light>" + 
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="card border-primary mb-12">
+			<div class="card-header">
+				<button type="button" class="btn btn-primary btn-sm">+
+					Create New</button>
+				<br>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">User List</h4>
+				<div class="form-group">
+					<table class="table table-responsive-sm">
+						<thead>
+							<tr>
+								<th scope="col">User Name</th>
+								<th scope="col">First Name</th>
+								<th scope="col">Second Name</th>
+								<th scope="col">Job Title</th>
+								<th scope="col">Contact Phone</th>
+								<th scope="col">Email</th>
+							</tr>
+						</thead>
+						<tbody>
+							<% String AllUsersDetails = (String)request.getAttribute("usersAllForward");
+                					 String usersstring = (String)request.getAttribute("usersstring");
+ 		 						     int inputs = Integer.valueOf(usersstring);
+                  					 String stringTable = (String)request.getAttribute("usersAllForward");
+									String wordTable = "\"\"";
+									String tempTable[] = AllUsersDetails.split("\"");
+									int countTable = 0;
+			    					for (int i = 0; i < tempTable.length; i++) {
+				    				if (wordTable.equals(tempTable[i]))
+									countTable++;		
+									}
+				   					 int z= 0; 
+									for (int j=0; j< inputs; j++) {
+									out.println(  "<tr class=table-light>" + 
 										"      <th scope=row >"+tempTable[z+11]+"</td>" + 
-										"      <td>"+tempTable[z+13]+"</td>" + 
 										"      <td>"+tempTable[z+15]+"</td>" + 
-										"      <td>"+tempTable[z+17]+"</td>" + 
 										"      <td>"+tempTable[z+19]+"</td>" + 
-										"      <td>"+tempTable[z+21]+"</td>" + 
+										"      <td>"+tempTable[z+23]+"</td>" + 
+										"      <td>"+tempTable[z+27]+"</td>" + 
+										"      <td>"+tempTable[z+31]+"</td>" + 
 										"    </tr>"); 			          
-											z=z+20;
+											z=z+36;
 											}
-              				
-             %>			
-				  </tbody>
+            			 	 %>			
+				 		 </tbody>
 				</table> 
 	
-		</div>	
+			</div>	
    </div>	
- </div> <br> 
-	
-</div>  
-  
+ </div>
+			<br>
+
+		</div>
 </body>
 </html>
