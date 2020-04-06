@@ -66,9 +66,22 @@ public class usersServlet extends HttpServlet {
 						 	request.getRequestDispatcher("user.jsp").forward(request, response);   		 		
 						   // RequestDispatcher req = request.getRequestDispatcher("user.jsp");
 							//req.include(request, response);
-						 	out.close();
+						 	//out.close();
                           // response.sendRedirect("user.jsp");  
 							
 				}
+				
+				
+				
 	}	
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		 response.sendRedirect("user.jsp");
+		
+		
+	}
+
+
 }
