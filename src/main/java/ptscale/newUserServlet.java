@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
-public class usersServlet extends HttpServlet {
+public class newUserServlet extends HttpServlet {
 	 
 	
 	

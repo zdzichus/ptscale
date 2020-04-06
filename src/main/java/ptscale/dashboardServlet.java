@@ -9,11 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 
 public class dashboardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	usersMongo input = new usersMongo();
 
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String usersAll = input.readUsers();
+		int sizeint = input.size();
+		String sizestring = String.valueOf(sizeint); 
+	  
+		request.setAttribute("usersAllForward", usersAll);
+		request.setAttribute("usersstring", sizestring);
+	 	request.getRequestDispatcher("user.jsp").forward(request, response); 
 	}
 
 
