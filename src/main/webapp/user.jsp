@@ -54,7 +54,7 @@
 			<div class="card-body">
 				<h4 class="card-title">User List</h4>
 				<div class="form-group">
-					<table class="table table-responsive-sm">
+					<table class="table table-responsive-md">
 						<thead>
 							<tr>
 								<th scope="col">User Name</th>

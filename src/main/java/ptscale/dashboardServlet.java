@@ -15,11 +15,10 @@ public class dashboardServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     
-    	System.out.println("DASBOARD SERVLET");
+    	
 		String usersAll = input.readUsers();
 		int sizeint = input.size();
 		String sizestring = String.valueOf(sizeint); 
-	  
 		request.setAttribute("usersAllForward", usersAll);
 		request.setAttribute("usersstring", sizestring);
 	 	request.getRequestDispatcher("user.jsp").forward(request, response); 
