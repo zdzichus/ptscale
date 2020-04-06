@@ -66,7 +66,7 @@ public class usersServlet extends HttpServlet {
 						 	request.getRequestDispatcher("user.jsp").forward(request, response);   		 		
 						   // RequestDispatcher req = request.getRequestDispatcher("user.jsp");
 							//req.include(request, response);		
-                            response.sendRedirect("user.jsp");  
+                          //  response.sendRedirect("user.jsp");  
 							
 				}
 	}	
