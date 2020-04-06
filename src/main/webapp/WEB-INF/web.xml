@@ -10,4 +10,23 @@
     <servlet-name>usersServlet</servlet-name>
     <url-pattern>/usersServlet</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+      <servlet-name>usersServlet</servlet-name>
+     <jsp-file>user.jsp</jsp-file>
+   </servlet>
+	<servlet-mapping>
+     <servlet-name>usersServlet</servlet-name>
+     <url-pattern>/user</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+      <servlet-name>usersServlet</servlet-name>
+     <jsp-file>newUser.jsp</jsp-file>
+   </servlet>
+	<servlet-mapping>
+     <servlet-name>usersServlet</servlet-name>
+     <url-pattern>/newUser</url-pattern>
+	</servlet-mapping>
+  
 </web-app>

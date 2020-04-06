@@ -32,7 +32,7 @@
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="../">Dashboard</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../user.jsp">Users<span	class="sr-only">(current)</span></a></li>
+					<li class="nav-item active"><a class="nav-link" href="../usersServlet">Users<span	class="sr-only">(current)</span></a></li>
 					<li class="nav-item"><a class="nav-link" href="#">TimeSheets</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
 				</ul>
@@ -71,10 +71,7 @@
                 					String usersstring = (String)request.getAttribute("usersstring");
  		 						    int inputs = Integer.valueOf(usersstring);
                   					String stringTable = (String)request.getAttribute("usersAllForward");
-                                    
-									if (inputs > 0) 
-									{
-
+                                   
 									String wordTable = "\"\"";
 									String tempTable[] = AllUsersDetails.split("\"");
 									int countTable = 0;
@@ -94,11 +91,6 @@
 													"    </tr>"); 			          
 													z=z+36;
 												}
-											}
-								else{
-                                  				
-
-								}	
 									
             			 	 %>		
             			 	 	

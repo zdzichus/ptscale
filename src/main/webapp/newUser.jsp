@@ -33,8 +33,7 @@
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-					<li class="nav-item active"><a class="nav-link"
-						href="../newUser.jsp">Users<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item active"><a class="nav-link"	href="../usersServlet">Users<span class="sr-only">(current)</span></a></li>
 					<li class="nav-item"><a class="nav-link" href="#">TimeSheets</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
 				</ul>
@@ -53,7 +52,7 @@
 			<div class="card-header">New User</div>
 			<div class="card-body">
 				<h4 class="card-title">Entry details:</h4>
-				<form method="get" action="usersServlet" id="userreg">
+				<form method="get" action="usersServlet">
 
 					<div class="form-group">
 						<label class="form-control-label" for="inputSuccess1">Login
