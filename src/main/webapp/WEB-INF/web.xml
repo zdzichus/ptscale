@@ -20,7 +20,7 @@
   </servlet-mapping>
   
   <servlet>
-    <servlet-name>UserServlet</servlet-name>
+    <servlet-name>userServlet</servlet-name>
     <jsp-file>newUser.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
