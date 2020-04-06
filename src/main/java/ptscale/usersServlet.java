@@ -63,10 +63,11 @@ public class usersServlet extends HttpServlet {
 						  
 							request.setAttribute("usersAllForward", usersAll);
 							request.setAttribute("usersstring", sizestring);
-						 	//request.getRequestDispatcher("user.jsp").forward(request, response);   		 		
+						 	request.getRequestDispatcher("user.jsp").forward(request, response);   		 		
 						   // RequestDispatcher req = request.getRequestDispatcher("user.jsp");
-							//req.include(request, response);		
-                           response.sendRedirect("user.jsp");  
+							//req.include(request, response);
+						 	out.close();
+                          // response.sendRedirect("user.jsp");  
 							
 				}
 	}	
