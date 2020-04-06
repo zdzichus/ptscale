@@ -15,12 +15,16 @@ import com.mongodb.DBObject;
 
 public class usersServlet extends HttpServlet {
 	 
+	
+	
 	public static final long serialVersionUID = 1L;
 	users users = new users();
 	usersMongo input = new usersMongo();
 	
+
+	
    
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();

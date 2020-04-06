@@ -52,7 +52,7 @@
 			<div class="card-header">New User</div>
 			<div class="card-body">
 				<h4 class="card-title">Entry details:</h4>
-				<form method="get" action="usersServlet">
+				<form method="post" action="usersServlet">
 
 					<div class="form-group">
 						<label class="form-control-label" for="inputSuccess1">Login
