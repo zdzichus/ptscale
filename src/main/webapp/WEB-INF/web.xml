@@ -21,11 +21,12 @@
   
   <servlet>
     <servlet-name>userServlet</servlet-name>
-    <jsp-file>newUser.jsp</jsp-file>
+    <servlet-class>ptscale.userServlet</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>userServlet</servlet-name>
-    <url-pattern>/newUser</url-pattern>
+    <url-pattern>/userServlet</url-pattern>
   </servlet-mapping>
   
   <servlet>
