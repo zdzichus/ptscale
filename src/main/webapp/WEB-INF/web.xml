@@ -23,7 +23,7 @@
     <jsp-file>newUser.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-    <servlet-name>usersServlet</servlet-name>
+    <servlet-name>userServlet</servlet-name>
     <url-pattern>/newUser</url-pattern>
   </servlet-mapping>
   <servlet>
