@@ -30,12 +30,13 @@
   
   <servlet>
     <servlet-name>dashboardServlet</servlet-name>
-    <jsp-file>index.jsp</jsp-file>
+    <servlet-class>ptscale.dashboardServlet</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>dashboardServlet</servlet-name>
-    <url-pattern>/index</url-pattern>
+    <url-pattern>/dashboardServlet</url-pattern>
+  
   </servlet-mapping>
   
-
 </web-app>
