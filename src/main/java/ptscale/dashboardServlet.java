@@ -2,6 +2,7 @@ package ptscale;
 
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,6 +14,8 @@ public class dashboardServlet extends HttpServlet {
 
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    
+    	System.out.println("DASBOARD SERVLET");
 		String usersAll = input.readUsers();
 		int sizeint = input.size();
 		String sizestring = String.valueOf(sizeint); 
@@ -20,6 +23,8 @@ public class dashboardServlet extends HttpServlet {
 		request.setAttribute("usersAllForward", usersAll);
 		request.setAttribute("usersstring", sizestring);
 	 	request.getRequestDispatcher("user.jsp").forward(request, response); 
+	 	
+	 	
 	}
 
 
