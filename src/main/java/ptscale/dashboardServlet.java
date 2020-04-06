@@ -12,7 +12,7 @@ public class dashboardServlet extends HttpServlet {
 	usersMongo input = new usersMongo();
 
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String usersAll = input.readUsers();
 		int sizeint = input.size();
 		String sizestring = String.valueOf(sizeint); 
