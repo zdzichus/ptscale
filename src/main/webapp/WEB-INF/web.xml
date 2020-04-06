@@ -11,15 +11,6 @@
   </servlet-mapping>
   
   <servlet>
-    <servlet-name>newUserServlet</servlet-name>
-    <jsp-file>user.jsp</jsp-file>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>newUserServlet</servlet-name>
-    <url-pattern>/user</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
     <servlet-name>userServlet</servlet-name>
     <servlet-class>ptscale.userServlet</servlet-class>
   </servlet>
