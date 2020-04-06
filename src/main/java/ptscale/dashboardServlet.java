@@ -13,7 +13,7 @@ public class dashboardServlet extends HttpServlet {
 	usersMongo input = new usersMongo();
 
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     
     	System.out.println("DASBOARD SERVLET");
 		String usersAll = input.readUsers();
