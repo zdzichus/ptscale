@@ -10,32 +10,38 @@
     <servlet-name>newUserServlet</servlet-name>
     <url-pattern>/newUserServlet</url-pattern>
   </servlet-mapping>
-  
-    <servlet>
-      <servlet-name>newUserServlet</servlet-name>
-     <jsp-file>user.jsp</jsp-file>
-   </servlet>
-	<servlet-mapping>
-     <servlet-name>newUserServlet</servlet-name>
-     <url-pattern>/user</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-      <servlet-name>newUserServlet</servlet-name>
-     <jsp-file>newUser.jsp</jsp-file>
-   </servlet>
-	<servlet-mapping>
-     <servlet-name>usersServlet</servlet-name>
-     <url-pattern>/newUser</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-      <servlet-name>dashboardServlet</servlet-name>
-     <jsp-file>index.jsp</jsp-file>
-   </servlet>
-	<servlet-mapping>
-     <servlet-name>dashboardServlet</servlet-name>
-     <url-pattern>/index</url-pattern>
-	</servlet-mapping>
-  
+  <servlet>
+    <servlet-name>newUserServlet</servlet-name>
+    <jsp-file>user.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newUserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>newUserServlet</servlet-name>
+    <jsp-file>newUser.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>usersServlet</servlet-name>
+    <url-pattern>/newUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>dashboardServlet</servlet-name>
+    <jsp-file>index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboardServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>userServlet</display-name>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>ptscale.userServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

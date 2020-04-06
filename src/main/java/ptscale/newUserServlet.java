@@ -18,7 +18,7 @@ public class newUserServlet extends HttpServlet {
 	
 	
 	public static final long serialVersionUID = 1L;
-	users users = new users();
+	user users = new user();
 	usersMongo input = new usersMongo();
 	
 

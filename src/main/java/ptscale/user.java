@@ -1,6 +1,6 @@
 package ptscale;
 
-public class users {
+public class user {
 	
 	private String userName;
 	private String firstName;
