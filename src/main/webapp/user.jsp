@@ -67,12 +67,12 @@
 						</thead>
 						<tbody>
 							<%     
-									
                                     String AllUsersDetails = (String)request.getAttribute("usersAllForward");
                 					String usersstring = (String)request.getAttribute("usersstring");
  		 						    int inputs = Integer.valueOf(usersstring);
                   					String stringTable = (String)request.getAttribute("usersAllForward");
-                                    if (inputs > 0) 
+                                    
+									if (inputs > 0) 
 									{
 
 									String wordTable = "\"\"";
